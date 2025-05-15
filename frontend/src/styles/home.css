@@ -1,0 +1,33 @@
+/* Home container styles */
+.home-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #1e3c72, #2a5298);
+  padding: 32px 0;
+  color: white;
+}
+
+.home-container h1 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 18px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.home-container p {
+  font-size: 1.15rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.home-link {
+  color: #61dafb;
+  text-decoration: none;
+  font-weight: 600;
+  transition: text-decoration 0.2s;
+}
+
+.home-link:hover {
+  text-decoration: underline;
+}

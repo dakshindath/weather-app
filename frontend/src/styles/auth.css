@@ -1,0 +1,86 @@
+.auth-page-wrapper {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(to bottom, #1e3c72, #2a5298);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.signup-container, .login-container {
+  max-width: 400px;
+  width: 100%;
+  padding: 32px 28px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(52, 152, 219, 0.12);
+  text-align: center;
+  transition: box-shadow 0.2s;
+}
+
+.signup-container:hover, .login-container:hover {
+  box-shadow: 0 12px 40px rgba(52, 152, 219, 0.18);
+}
+
+.signup-form, .auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.signup-input, .login-input {
+  padding: 12px;
+  font-size: 1.1rem;
+  border: 1.5px solid #d0e6f7;
+  border-radius: 6px;
+  background: #f7fbfe;
+  transition: border 0.2s;
+}
+
+.signup-input:focus, .login-input:focus {
+  border-color: #3498db;
+  outline: none;
+  background: #eaf6fd;
+}
+
+.signup-button, .loginbutton {
+  padding: 12px;
+  font-size: 1.1rem;
+  background: linear-gradient(90deg, #3498db 60%, #6dd5fa 100%);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 8px rgba(52, 152, 219, 0.08);
+  transition: background 0.2s;
+}
+
+.signup-button:hover, .loginbutton:hover {
+  background: linear-gradient(90deg, #217dbb 60%, #3498db 100%);
+}
+
+.signup-message, .login-message {
+  margin-top: 14px;
+  color: #27ae60;
+  font-weight: 500;
+}
+
+.signup-text, .login-text {
+  margin-top: 18px;
+  color: #888;
+}
+
+.signup-link, .login-link {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 600;
+  transition: text-decoration 0.2s;
+}
+
+.signup-link:hover, .login-link:hover {
+  text-decoration: underline;
+}
