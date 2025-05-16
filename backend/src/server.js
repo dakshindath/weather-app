@@ -22,7 +22,7 @@ mongoose.connect(MONGODB_URI)
     process.exit(1);
   });
 
-app.use('/api/auth', authroute);
-app.use('/api/weather', weatherroute);
+app.use('/auth', authroute);
+app.use('/weather', weatherroute);
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
