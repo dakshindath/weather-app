@@ -6,6 +6,7 @@
   position: relative;
   overflow: hidden;
   padding-bottom: 30px;
+  caret-color: transparent; 
 }
 
 .weather-app::before {
@@ -63,6 +64,38 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logout-button {
+  padding: 8px 16px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer !important;
+  transition: all 0.2s ease;
+  position: relative;
+  z-index: 100;
+  outline: none;
+  user-select: none;
+  caret-color: auto;
+}
+
+.logout-button:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.logout-button:active {
+  background: rgba(255, 255, 255, 0.35);
+  transform: translateY(1px);
+}
+
 .weather-header h1 {
   font-size: 28px;
   font-weight: 600;
@@ -99,6 +132,7 @@
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
+  caret-color: white; 
 }
 
 .global-search-input::placeholder {
@@ -120,6 +154,7 @@
   border-radius: 10px;
   list-style: none;
   padding: 10px 0;
+  caret-color: transparent;
   margin: 0;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   z-index: 20;
@@ -132,6 +167,8 @@
   color: #333;
   cursor: pointer;
   transition: background-color 0.2s;
+  caret-color: transparent;
+  user-select: none;
 }
 
 .global-search-suggestions li:hover {
@@ -240,7 +277,6 @@
 }
 
 .air-conditions h3 {
-  /* text-align: center;   */
   font-size: 18px;
   margin: 0 0 15px;
   font-weight: 600;
@@ -457,6 +493,11 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
+  }
+  
+  .header-right {
+    width: 100%;
+    justify-content: space-between;
   }
   
   .global-search-container {
